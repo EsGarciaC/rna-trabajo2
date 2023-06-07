@@ -1,2 +1,2 @@
 # rna-trabajo2
-Trabajo 2 RNA
+Trabajo 2 RNA "GPT-Detective"
