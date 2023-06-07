@@ -79,7 +79,7 @@ Las temáticas y, consecuentemente, las palabras más usadas después de un leve
 
 <img src="imagenes/Human_Wordcloud.png" alt="Human_Wordcloud" title="Human_Wordcloud">
 
-_Figura 2. Humanos wordcloud._
+_Figura 3. Humanos wordcloud._
 
 A partir de estos datos y un modelo de detección de spam [7], pudimos obtener el modelo y resultados descritos en la siguiente sección.
 
@@ -92,7 +92,7 @@ Tras su evaluación, se obtuvieron los siguiente resultados:
 
 <img src="imagenes/evaluacion_ensayos.png" alt="evaluacion_ensayos" title="evaluacion_ensayos">
 
-_Figura 3: evaluación de ensayos_
+_Figura 4: evaluación de ensayos_
 
 La variable “labels” almacena con un valor entre 0 y 1, en donde 0 significa que es un texto totalmente artificial y 1 significa que es un texto 100% humano. Como se puede observar, el texto humano es 97.2% humano mientras que el texto generado con ChatGPT entrega un resultado de 28.8%. Esto permite hallar una altísima cantidad de patrones usados por ChatGPT a la hora de analizar el texto. 
 Los resultados de las pruebas muestran que el sistema es capaz de identificar correctamente los ensayos generados por ChatGPT, lo cual se considera un rendimiento alto para un clasificador binario de éstas características.
