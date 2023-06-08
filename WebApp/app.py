@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify, send_file, session
 from keras.utils.data_utils import pad_sequences
 from loader import load_predictor
+from json import dumps
 
 app = Flask(__name__)
 
@@ -25,15 +26,15 @@ def index():
 def prediccion():
     if request.method == 'POST':
         json_input = request.get_json(silent=True)
-        print(json_input)
-        return jsonify(json_input)
+        #print({"payload": predecir(json_input)[0][0]})
+        return jsonify({"payload": str(predecir(json_input)[0][0])})
 
 def predecir(texto):
     text_list = [texto]
     text_sequence = tokenizer.texts_to_sequences(text_list)
     text_padded = pad_sequences(text_sequence, maxlen=max_len, padding=padding_type, truncating=trunc_type)
     labels = model.predict(text_padded)
-    return str(labels)
+    return labels
 
 if __name__ == '__main__':
     app.run(debug=True)
