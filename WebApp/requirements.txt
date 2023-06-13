@@ -7,7 +7,7 @@ charset-normalizer
 click
 colorama
 Flask
-flatbuffers5
+flatbuffers
 gast
 google-auth
 google-auth-oauthlib
@@ -43,6 +43,6 @@ tensorflow-intel
 tensorflow-io-gcs-filesystem
 termcolor
 typing_extensions
-urllib36
+urllib3
 Werkzeug
 wrapt
