@@ -17,7 +17,7 @@ h5py
 idna
 itsdangerous
 jax
-Jinja
+Jinja2
 keras
 libclang
 Markdown
