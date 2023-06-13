@@ -1,8 +1,8 @@
 import pickle
+from keras.models import load_model
 def load_predictor():
-    modelo = open("modelo/modelo_GPT_Detective.pkl","rb")
+    model = load_model('modelo')
     tokenizer = open("modelo/Tokenizer.pkl", "rb")
-    model = pickle.load(modelo)
     tokenizer = pickle.load(tokenizer)
 
     return (model, tokenizer)

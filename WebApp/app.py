@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, send_file, session
+from flask import Flask, render_template, request, jsonify
 from keras.utils.data_utils import pad_sequences
 from loader import load_predictor
 from json import dumps
