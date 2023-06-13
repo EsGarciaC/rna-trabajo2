@@ -1,10 +1,13 @@
 function obtenerResultados() {
   // Obtener el texto del ensayo
   var ensayo = document.getElementById("ensayo").value;
-  
+  if (!ensayo){
+    alert("Por favor ingresa un ensayo")
+  }else{
   // Enviar el texto del ensayo al JavaScript para procesarlo
   procesarEnsayo(ensayo);
   //console.log(ensayo);
+  }
 }
 
 function procesarEnsayo(ensayo) {
