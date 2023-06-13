@@ -37,4 +37,4 @@ def predecir(texto):
     return labels
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
