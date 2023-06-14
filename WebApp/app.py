@@ -26,7 +26,6 @@ def index():
 def prediccion():
     if request.method == 'POST':
         json_input = request.get_json(silent=True)
-        #print({"payload": predecir(json_input)[0][0]})
         return jsonify({"payload": str(predecir(json_input)[0][0])})
 
 def predecir(texto):

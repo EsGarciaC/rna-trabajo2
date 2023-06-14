@@ -14,10 +14,14 @@
   <div>
     <img id="logo" src="{{url_for('static', filename='images/logo.png')}}" alt="Logo de GPTDetective">
   </div>
+  <div id="explicacion">
+    <p class = "center">GPT-Detective es un servicio innovador que busca abordar el problema del abuso de la inteligencia artificial en la generación de texto, específicamente en la redacción de ensayos. Nuestro objetivo es proporcionar una solución que permita a las instituciones educativas, empresas y otros usuarios identificar fácilmente los ensayos escritos por inteligencia artificial, como ChatGPT.</p>
+  <br>
+  </div>
   <h1>Ingresa el texto</h1>
   <div>
   <textarea id="ensayo" placeholder="Ingrese aquí el texto a analizar..." rows="10" cols="50"></textarea><br>
-  <p>(Maxima fiabilidad para textos de más de 600 palabras)</p>
+  <p>(Máxima fiabilidad para textos de más de 600 palabras)</p>
   </div>
   <button onclick="obtenerResultados()">Obtener Resultados</button>
   <div id="divTexto" style="display:none">

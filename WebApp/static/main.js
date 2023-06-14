@@ -14,7 +14,6 @@ function procesarEnsayo(ensayo) {
   // Realizar las acciones necesarias con el texto del ensayo
   var porcentajeHumano;
   var cuerpoFiltrado = ensayo.replace(/"|'/g, "`").replace(/\\/g, "").replace(/\n/g, ' ').replace(/  +/g, ' '); 
-  console.log(cuerpoFiltrado)
   // Obtener el porcentaje humano
   const url = window.location.href + "predict";
     (async () => {
@@ -29,9 +28,9 @@ function procesarEnsayo(ensayo) {
       //const content = rawResponse;
       const content = await rawResponse.json();
       porcentajeHumano = parseFloat(content["payload"]);    
-      console.log(porcentajeHumano);
+
       // Conclusión del detective
-      console.log(porcentajeHumano);
+
       var texto = `El score de su texto es ${Math.round(porcentajeHumano*100)}%`;
       
       // Mostrar u ocultar las imágenes según el valor de porcentajeHumano
